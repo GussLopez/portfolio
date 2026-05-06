@@ -2,5 +2,6 @@
   "hisgroupExperience": "He desarrollado y mantenido dos aplicaciones web comerciales utilizadas por clientes reales, participando en todo el ciclo de desarrollo. Diseñé e implementé APIs RESTful utilizando Node.js y Express, además de modelar y gestionar bases de datos relacionales con PostgreSQL. Desarrollé un sistema completo de seguimiento de órdenes para clientes, así como funcionalidades de carga y visualización de facturas. También implementé un sistema de gestión de productos con operaciones CRUD. Adicionalmente, lideré la migración del frontend de React a Next.js, logrando mejorar el rendimiento general y la optimización para SEO.",
   "technicianEducation": "Senior university technician",
   "engeneeringEducation": "Software engineering",
-  "present": "Presente"
+  "present": "Presente",
+  "education": "Educación"
 }

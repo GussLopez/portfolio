@@ -3,11 +3,11 @@ import { Separator } from "./separator";
 import { ArrowUpRight } from "lucide-react";
 
 export default function Education() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <section className="container max-w-4xl mx-auto px-8 py-4 mt-10">
-      <h2 className="text-xl font-medium">Education</h2>
+      <h2 className="text-xl font-medium">{t("education")}</h2>
       <div className="flex gap-5 mt-4">
         <div className="flex flex-col relative">
           <div className="absolute inset-[-5.5px] mt-4.5 h-3 w-3 rounded-full border border-neutral-400 bg-neutral-200 dark:border-neutral-600 dark:bg-neutral-800" />
