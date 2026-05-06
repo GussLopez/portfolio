@@ -5,5 +5,11 @@
   "present": "Presente",
   "education": "Educación",
   "experience": "Experiencia",
-  "proyects": "Proyectos"
+  "proyects": "Proyectos",
+  "im": "Me llamo",
+  "currentStudy": "soy estudiante de la",
+  "heroDescription": "estudio Ingeniería de Software en Cancún y cuento con más de un año de experiencia. Me apasiona crear interfaces de usuario UX/UI limpias y desarrollar aplicaciones full-stack.",
+  "softwareDev": "Desarrollador de Software",
+  "softwareEngEducation": "Ingeniería en Software",
+  "softwareTechEducation": "Técnico Superior Universitario"
 }

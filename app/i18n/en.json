@@ -5,5 +5,11 @@
   "present": "Present",
   "education": "Education",
   "experience": "Experience",
-  "proyects": "Proyects"
+  "proyects": "Proyects",
+  "im": "I'm",
+  "currentStudy": "currently a student at",
+  "heroDescription": "studying Software Engeeniring from Cancún with +1 year of experience. I'm passionate about making clean UX/UI and building fullstack apps.",
+  "softwareDev": "Software Developer",
+  "softwareEngEducation": "Software Engineering",
+  "softwareTechEducation": "Senior University Technician"
 }
