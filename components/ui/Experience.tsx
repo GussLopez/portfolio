@@ -17,7 +17,7 @@ export default function Experience() {
         <div className="mt-1.5">
           <span className="text-xs font-mono text-muted-foreground">2024 - Present</span>
           <div>
-            <p className="text-lg font-bold">Software Developer</p>
+            <p className="text-lg font-bold">{t("softwareDev")}</p>
             <div>
 
               <a

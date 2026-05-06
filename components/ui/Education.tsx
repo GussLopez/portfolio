@@ -19,7 +19,7 @@ export default function Education() {
           <div>
             <span className="text-xs font-mono text-muted-foreground">2025 - {t("present")}</span>
             <div>
-              <p className="text-lg font-bold">{t("engeneeringEducation")}</p>
+              <p className="text-lg font-bold">{t("softwareEngEducation")}</p>
               <div>
                 <a
                   href={'https://utcancun.edu.mx'}
@@ -37,7 +37,7 @@ export default function Education() {
           <div className="mt-5">
             <span className="text-xs font-mono text-muted-foreground">2023 - 2025</span>
             <div>
-              <p className="text-lg font-bold">{t("technicianEducation")}</p>
+              <p className="text-lg font-bold">{t("softwareTechEducation")}</p>
               <div>
                 <a
                   href={'https://utcancun.edu.mx'}
