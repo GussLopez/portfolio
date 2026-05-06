@@ -22,7 +22,7 @@ export default function Education() {
               <p className="text-lg font-bold">{t("engeneeringEducation")}</p>
               <div>
                 <a
-                  href={'http://www.hisgroupcompany.com'}
+                  href={'https://utcancun.edu.mx'}
                   target="_blank"
                   className="flex w-fit items-center gap-1 mt-2 text-sm text-muted-foreground group hover:text-black dark:hover:text-white transition-colors duration-300">
                   Universidad Tecnológica de Cancún
@@ -40,7 +40,7 @@ export default function Education() {
               <p className="text-lg font-bold">{t("technicianEducation")}</p>
               <div>
                 <a
-                  href={'http://www.hisgroupcompany.com'}
+                  href={'https://utcancun.edu.mx'}
                   target="_blank"
                   className="flex w-fit items-center gap-1 mt-2 text-sm text-muted-foreground group hover:text-black dark:hover:text-white transition-colors duration-300">
                   Universidad Tecnológica de Cancún
