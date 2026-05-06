@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import "./i18n"
 import Education from "@/components/ui/Education";
 import Footer from "@/components/ui/Footer";
+import Proyects from "@/components/ui/Proyects";
 
 export default function Home() {
   const { t, i18n } = useTranslation();
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <Experience />
         <Education />
+        <Proyects />
       </div>
       <Footer />
     </main>
