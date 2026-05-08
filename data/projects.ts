@@ -15,18 +15,22 @@ export const projects = [
       {
         icon: RiNextjsFill,
         className: "",
+        name: 'Next.js'
       },
       {
         icon: RiSupabaseFill,
         className: "text-[#3FCF8E]",
+        name: 'Supabase'
       },
       {
         icon: RiTailwindCssFill,
         className: "text-[#06B6D4]",
+        name: 'TailwindCSS'
       },
       {
         icon: SiShadcnui,
         className: "",
+        name: 'Shadcn UI'
       },
     ],
   },
@@ -38,22 +42,27 @@ export const projects = [
       {
         icon: RiNextjsFill,
         className: "",
+        name: 'Next.js'
       },
       {
         icon: SiExpress,
         className: "",
+        name: 'Express'
       },
       {
         icon: BiLogoPostgresql,
         className: "text-[#4570f1]",
+        name: 'PostgreSQL'
       },
       {
         icon: RiTailwindCssFill,
         className: "text-[#06B6D4]",
+        name: 'TailwindCSS'
       },
       {
         icon: SiShadcnui,
         className: "",
+        name: 'Shadcn UI'
       },
     ],
   },
@@ -65,22 +74,27 @@ export const projects = [
       {
         icon: RiNextjsFill,
         className: "",
+        name: 'Next.js'
       },
       {
         icon: SiExpress,
         className: "",
+        name: 'Express'
       },
       {
         icon: BiLogoPostgresql,
         className: "text-[#4570f1]",
+        name: 'PostgreSQL'
       },
       {
         icon: RiTailwindCssFill,
         className: "text-[#06B6D4]",
+        name: 'TailwindCSS'
       },
       {
         icon: SiShadcnui,
         className: "",
+        name: 'Shadcn UI'
       },
     ],
   },
