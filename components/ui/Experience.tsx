@@ -6,7 +6,7 @@ export default function Experience() {
   const { t } = useTranslation();
 
   return (
-    <section className="container max-w-4xl mx-auto px-8 py-4 mt-10">
+    <section className="container max-w-3xl mx-auto px-8 py-4 mt-10">
       <h2 className="text-xl font-medium">{t("experience")}</h2>
       <div className="flex gap-5 mt-4">
         <div className="flex flex-col relative">
