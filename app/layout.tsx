@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Gilda_Display } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import { TooltipProvider } from "@/components/animate-ui/components/animate/tooltip";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,7 +38,9 @@ export default function RootLayout({
         className="min-h-full flex flex-col bg-background selection:bg-orange-300 dark:selection:bg-orange-500 dark:selection:text-white"
       >
         <ThemeProvider attribute={'class'} enableSystem>
-          {children}
+          <TooltipProvider>
+            {children}
+          </TooltipProvider>
         </ThemeProvider>
       </body>
     </html>
