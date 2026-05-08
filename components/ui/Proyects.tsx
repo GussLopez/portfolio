@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import { Separator } from "./separator";
 import { projects } from "@/data/projects";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../animate-ui/components/animate/tooltip";
 
 
 
@@ -51,15 +52,21 @@ export default function Proyects() {
                         const Icon = tech.icon;
 
                         return (
-                          <span
-                            key={index}
-                            className="flex justify-center items-center w-8 h-8 border border-input rounded-md"
-                          >
-                            <Icon
-                              size={20}
-                              className={`size-5 ${tech.className}`}
-                            />
-                          </span>
+                          <Tooltip key={index}>
+                            <TooltipTrigger>
+                              <span
+                                className="flex justify-center items-center w-8 h-8 border border-input rounded-md"
+                              >
+                                <Icon
+                                  size={20}
+                                  className={`size-5 ${tech.className}`}
+                                />
+                              </span>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              {tech.name}
+                            </TooltipContent>
+                          </Tooltip>
                         );
                       })}
                     </div>
