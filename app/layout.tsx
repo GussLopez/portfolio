@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Gilda_Display } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { TooltipProvider } from "@/components/animate-ui/components/animate/tooltip";
+import Navbar from "@/components/ui/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${gilda.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body
         className="min-h-full flex flex-col bg-background selection:bg-orange-300 dark:selection:bg-orange-500 dark:selection:text-white"
@@ -40,6 +42,7 @@ export default function RootLayout({
         <ThemeProvider attribute={'class'} enableSystem>
           <TooltipProvider>
             {children}
+            <Navbar />
           </TooltipProvider>
         </ThemeProvider>
       </body>
