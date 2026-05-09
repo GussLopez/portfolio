@@ -1,4 +1,4 @@
-import { GitBranch, Sun } from "lucide-react";
+import { Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "./button";
 import Link from "next/link";
@@ -8,7 +8,7 @@ export default function Header() {
   const { theme, setTheme } = useTheme()
 
   return (
-    <nav className="container max-w-3xl mx-auto px-8 py-4 flex items-center justify-between sticky top-0 bg-background z-50">
+    <nav className="container max-w-3xl mx-auto px-8 py-4 flex items-center justify-between bg-background">
       <Link
         href={'/'}
         className="font-semibold opacity-70 hover:opacity-100 transition-all"

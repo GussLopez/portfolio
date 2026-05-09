@@ -32,7 +32,7 @@ export default function Navbar() {
           </Link>
         ))}
         <Separator orientation="vertical" className="bg-input/40" />
-        <DropdownMenu>
+        <DropdownMenu modal={false}>
           <DropdownMenuTrigger asChild>
             <button className="p-2 cursor-pointer text-muted-foreground rounded-[3px] duration-150 focus-visible:outline-none hover:text-foreground">
               <Settings className="size-4" />
