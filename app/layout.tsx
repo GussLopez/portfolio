@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { TooltipProvider } from "@/components/animate-ui/components/animate/tooltip";
 import Navbar from "@/components/ui/navbar";
+import Footer from "@/components/ui/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,13 +38,14 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className="min-h-full flex flex-col bg-background selection:bg-orange-300 dark:selection:bg-orange-500 dark:selection:text-white"
+        className="min-h-full flex flex-col bg-background selection:bg-orange-300 selection:text-black dark:selection:bg-orange-500 dark:selection:text-white"
       >
         <ThemeProvider attribute={'class'} enableSystem>
           <TooltipProvider>
             {children}
             <Navbar />
           </TooltipProvider>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

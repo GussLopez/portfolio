@@ -3,14 +3,11 @@
 import Experience from "@/components/ui/Experience";
 import Header from "@/components/ui/Header";
 import Hero from "@/components/ui/Hero";
-import { useTranslation } from "react-i18next";
 import "./i18n"
 import Education from "@/components/ui/Education";
-import Footer from "@/components/ui/Footer";
 import Proyects from "@/components/ui/Proyects";
 
 export default function Home() {
-  const { t, i18n } = useTranslation();
   
   return (
     <main className="relative py-4 md:py-6">
@@ -21,7 +18,6 @@ export default function Home() {
         <Education />
         <Proyects />
       </div>
-      <Footer />
     </main>
   );
 }
