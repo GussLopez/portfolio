@@ -72,7 +72,7 @@ export default function Proyects() {
                     </div>
 
                     <Link
-                      href="#"
+                      href={`/projects/${project.slug}`}
                       className="p-2 border border-input rounded-md group"
                     >
                       <ArrowUpRight className="size-4 opacity-70 group-hover:opacity-100 transition-all" />
