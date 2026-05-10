@@ -3,8 +3,8 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Separator } from "./separator";
-import { Languages, Moon, Settings, Sun } from "lucide-react";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger } from "./dropdown-menu";
+import { Brackets, ChevronsUpDown, Code, House, Languages, Layers, Moon, Settings, Sun, User } from "lucide-react";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "./dropdown-menu";
 import { useTheme } from "next-themes";
 
 export default function Navbar() {
@@ -12,20 +12,83 @@ export default function Navbar() {
   const activePath = usePathname();
 
   const links = [
-    { link: 'Inicio', path: '/' },
-    { link: 'About', path: '/about' },
-    { link: 'Proyectos', path: '/projects' },
-    { link: 'Stack', path: '/stack' }
+    { link: 'Inicio', path: '/', icon: <House className="size-4.5 group-focus/dropdown-menu-item:stroke-white" /> },
+    { link: 'About', path: '/about', icon: <User className="size-4.5 group-focus/dropdown-menu-item:stroke-white" /> },
+    { link: 'Proyectos', path: '/projects', icon: <Code className="size-4.5 group-focus/dropdown-menu-item:stroke-white" /> },
+    { link: 'Stack', path: '/stack', icon: <Layers className="size-4.5 group-focus/dropdown-menu-item:stroke-white" /> }
   ]
 
   return (
     <div className="fixed bottom-6 right-1/2 translate-x-1/2 rounded-[3px] text-sm border border-input bg-muted">
-      <div className="flex items-center gap-1.5 p-1.5">
+      <div className="block md:hidden">
+        <DropdownMenu modal={false}>
+          <DropdownMenuTrigger asChild>
+            <div className="flex items-center gap-1.5 p-1.5">
+              <div className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-foreground">
+                <Brackets className="size-4 text-brand stroke-3" />
+                Inicio
+              </div>
+              <Separator orientation="vertical" />
+              <div className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-muted-foreground">
+                Menú
+                <ChevronsUpDown className="size-4 stroke-3" />
+              </div>
+            </div>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent
+            sideOffset={12}
+            side="top"
+            align="center"
+            className="min-w-65 rounded-[3px]"
+          >
+            <DropdownMenuGroup>
+              {links.map((link, i) => (
+                <DropdownMenuItem
+                  asChild
+                  key={i}
+                  className={`${activePath === link.path && 'bg-brand! text-white!'}`}
+                >
+                  <Link
+                    href={link.path}
+                    className={`flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium duration-150 rounded-[3px] hover:text-white!`}
+                  >
+                    {link.link}
+                    {link.icon}
+                  </Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuGroup>
+            <DropdownMenuSeparator />
+            <DropdownMenuGroup>
+              <DropdownMenuItem
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                className="p-0"
+              >
+                <span className="flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium rounded-[3px] hover:text-white!">
+                  Tema
+                  {theme === 'dark' ? (
+                    <Sun className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
+                  ) : (
+                    <Moon className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
+                  )}
+                </span>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="p-0">
+                <span className="flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium rounded-[3px] hover:text-white!">
+                  Idioma
+                  <Languages className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
+                </span>
+              </DropdownMenuItem>
+            </DropdownMenuGroup>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
+      <div className="hidden md:flex items-center gap-1.5 p-1.5">
         {links.map((link, i) => (
           <Link
             key={i}
             href={link.path}
-            className={`rounded-[3px] px-3 py-1.5 text-sm font-medium duration-150 focus-visible:ring-2 focus-visible:ring-brand focus-visible:outline-none t transition-colorsext-muted-foreground hover:text-foreground ${activePath === link.path && 'bg-brand! text-white!'
+            className={`rounded-[3px] px-3 py-1.5 text-sm font-medium hover:text-foreground ${activePath === link.path && 'bg-brand! text-white!'
               }`}
           >
             {link.link}
