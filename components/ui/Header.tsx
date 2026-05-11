@@ -1,4 +1,4 @@
-import { Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "./button";
 import Link from "next/link";
@@ -23,7 +23,7 @@ export default function Header() {
           size={'icon'}
           className="size-10 opacity-70 hover:opacity-100"
         >
-          <a href="#">
+          <a href="https://linkedin.com/in/gusslopez">
             <FaLinkedin className="size-5.5" />
           </a>
         </Button>
@@ -33,7 +33,7 @@ export default function Header() {
           size={'icon'}
           className="size-10 opacity-70 hover:opacity-100"
         >
-          <a href="#">
+          <a href="https://github.com/GussLopez" target="_blank">
             <FaGithub className="size-5.5" />
           </a>
         </Button>
@@ -43,7 +43,12 @@ export default function Header() {
           className="size-10 opacity-70 hover:opacity-100 group cursor-pointer"
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         >
-          <Sun className="size-5.5 transition-transform duration-500 group-hover:rotate-32" />
+
+          {theme === 'dark' ? (
+            <Sun className="size-5.5 transition-transform duration-500 group-hover:rotate-32" />
+          ) : (
+            <Moon className="size-5.5 transition-transform duration-500 group-hover:rotate-32" />
+          )}
         </Button>
       </div>
     </nav>
