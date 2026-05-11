@@ -12,10 +12,29 @@ export default function Navbar() {
   const activePath = usePathname();
 
   const links = [
-    { link: 'Inicio', path: '/', icon: <House className="size-4.5 group-focus/dropdown-menu-item:stroke-white" /> },
-    { link: 'About', path: '/about', icon: <User className="size-4.5 group-focus/dropdown-menu-item:stroke-white" /> },
-    { link: 'Proyectos', path: '/projects', icon: <Code className="size-4.5 group-focus/dropdown-menu-item:stroke-white" /> },
-    { link: 'Stack', path: '/stack', icon: <Layers className="size-4.5 group-focus/dropdown-menu-item:stroke-white" /> }
+    {
+      link: 'Inicio',
+      path: '/',
+      icon: <House className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
+    },
+    {
+      link: 'About',
+      path: '/about',
+      icon: <User className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
+
+    },
+    {
+      link: 'Proyectos',
+      path: '/projects',
+      icon: <Code className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
+
+    },
+    {
+      link: 'Stack',
+      path: '/stack',
+      icon: <Layers className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
+
+    }
   ]
 
   const isActive = (path: string) => {
