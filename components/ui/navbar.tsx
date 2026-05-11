@@ -44,6 +44,13 @@ export default function Navbar() {
 
     return activePath.startsWith(path);
   };
+  const currentLink = links.find((link) => {
+    if (link.path === '/') {
+      return activePath === '/';
+    }
+
+    return activePath.startsWith(link.path);
+  });
   return (
     <div className="fixed bottom-6 right-1/2 translate-x-1/2 rounded-[3px] text-sm border border-input bg-muted">
       <div className="block md:hidden">
@@ -52,7 +59,7 @@ export default function Navbar() {
             <div className="flex items-center gap-1.5 p-1.5">
               <div className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-foreground">
                 <Brackets className="size-4 text-brand stroke-3" />
-                Inicio
+                {currentLink?.link}
               </div>
               <Separator orientation="vertical" />
               <div className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-muted-foreground">
