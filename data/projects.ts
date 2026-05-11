@@ -84,7 +84,7 @@ export const projects = [
       },
       {
         icon: SiDrizzle,
-        className: "text-[#C5F74F]",
+        className: "text-lime-600 dark:text-[#C5F74F]",
         name: "Drizzle ORM",
       },
       {
@@ -265,7 +265,7 @@ export const allProjects = [
       },
       {
         icon: SiDrizzle,
-        className: "text-[#C5F74F]",
+        className: "text-lime-600 dark:text-[#C5F74F]",
         name: "Drizzle ORM",
       },
       {
