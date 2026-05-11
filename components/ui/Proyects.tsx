@@ -5,17 +5,21 @@ import { useTranslation } from "react-i18next";
 import { Separator } from "./separator";
 import { projects } from "@/data/projects";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../animate-ui/components/animate/tooltip";
-
+import { motion } from "motion/react";
 
 
 export default function Proyects() {
   const { t } = useTranslation();
 
   return (
-    <section className="container max-w-3xl mx-auto px-8 py-4 mt-10">
+    <motion.section
+      initial={{ opacity: 0, y: -6, filter: "blur(4px)" }}
+      animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+      transition={{ duration: .3, ease: "easeIn" }}
+      className="container max-w-3xl mx-auto px-8 py-4 mt-10"
+    >
       <div className="flex justify-between items-center">
         <h2 className="text-xl font-medium">{t("proyects")}</h2>
-
         <Link
           href="/projects"
           className="flex items-center gap-1.5 text-sm opacity-70 hover:opacity-100 transition-all duration-300 group"
@@ -29,8 +33,13 @@ export default function Proyects() {
       <div className="mt-6">
         <Separator className="h-px w-full bg-muted" />
 
-        {projects.map((project) => (
-          <div key={project.title}>
+        {projects.map((project, i) => (
+          <motion.div
+            initial={{ opacity: 0, y: -6, filter: "blur(4px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ duration: .3, ease: "easeIn", delay: .2 * (i + 1) }}
+            key={project.title}
+          >
             <div className="py-4">
               <div className="flex items-center justify-between">
                 <div className="lg:flex gap-5 items-center w-full">
@@ -88,9 +97,9 @@ export default function Proyects() {
               </div>
             </div>
             <Separator className="h-px w-full bg-muted" />
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -1,17 +1,22 @@
 import { ArrowUpRight } from "lucide-react";
 import { Separator } from "./separator";
 import { useTranslation } from "react-i18next";
+import { motion } from "motion/react";
 
 export default function Experience() {
   const { t } = useTranslation();
 
   return (
-    <section className="container max-w-3xl mx-auto px-8 py-4 mt-10">
+    <motion.section
+      initial={{ opacity: 0, y: -6, filter: "blur(4px)" }}
+      animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+      transition={{ duration: .3, ease: "easeIn" }}
+      className="container max-w-3xl mx-auto px-8 py-4 mt-10"
+    >
       <h2 className="text-xl font-medium">{t("experience")}</h2>
       <div className="flex gap-5 mt-4">
         <div className="flex flex-col relative">
           <div className="absolute inset-[-5.5px] mt-5 h-3 w-3 rounded-full border border-neutral-400 bg-neutral-200 dark:border-neutral-600 dark:bg-neutral-800" />
-
           <Separator orientation="vertical" className="h-full w-px" />
         </div>
         <div className="mt-1.5">
@@ -19,7 +24,6 @@ export default function Experience() {
           <div>
             <p className="text-lg font-bold">{t("softwareDev")}</p>
             <div>
-
               <a
                 href={'http://www.hisgroupcompany.com'}
                 target="_blank"
@@ -35,6 +39,6 @@ export default function Experience() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
