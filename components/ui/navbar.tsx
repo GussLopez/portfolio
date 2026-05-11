@@ -18,6 +18,13 @@ export default function Navbar() {
     { link: 'Stack', path: '/stack', icon: <Layers className="size-4.5 group-focus/dropdown-menu-item:stroke-white" /> }
   ]
 
+  const isActive = (path: string) => {
+    if (path === '/') {
+      return activePath === '/';
+    }
+
+    return activePath.startsWith(path);
+  };
   return (
     <div className="fixed bottom-6 right-1/2 translate-x-1/2 rounded-[3px] text-sm border border-input bg-muted">
       <div className="block md:hidden">
@@ -46,7 +53,7 @@ export default function Navbar() {
                 <DropdownMenuItem
                   asChild
                   key={i}
-                  className={`${activePath === link.path && 'bg-brand! text-white!'}`}
+                  className={` ${isActive(link.path) ? 'bg-brand! text-white!' : ''}`}
                 >
                   <Link
                     href={link.path}
@@ -88,7 +95,8 @@ export default function Navbar() {
           <Link
             key={i}
             href={link.path}
-            className={`rounded-[3px] px-3 py-1.5 text-sm font-medium hover:text-foreground ${activePath === link.path && 'bg-brand! text-white!'
+            className={`rounded-[3px] px-3 py-1.5 text-sm font-medium hover:text-foreground 
+               ${isActive(link.path) ? 'bg-brand! text-white!' : ''}
               }`}
           >
             {link.link}
