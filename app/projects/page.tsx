@@ -1,15 +1,22 @@
+'use client'
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { allProjects } from "@/data/projects";
 import { Separator } from "@/components/ui/separator";
 import { Tooltip, TooltipContent } from "@/components/animate-ui/components/animate/tooltip";
 import { TooltipTrigger } from "@/components/animate-ui/primitives/animate/tooltip";
+import { motion } from "motion/react";
 
 export default function Projects() {
 
   return (
     <main className="container max-w-3xl mx-auto py-4">
-      <section className="container max-w-3xl mx-auto px-8 py-4 mt-10">
+      <motion.section
+        initial={{ opacity: 0, y: -6, filter: "blur(4px)" }}
+        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        transition={{ duration: .3, ease: "easeIn" }}
+        className="container max-w-3xl mx-auto px-8 py-4 mt-10"
+      >
         <div className="flex justify-between items-center">
           <Link
             href="/"
@@ -24,8 +31,14 @@ export default function Projects() {
         <div className="mt-6">
           <Separator className="h-px w-full bg-muted" />
 
-          {allProjects.map((project) => (
-            <div key={project.title} className="border-b border-border">
+          {allProjects.map((project, i) => (
+            <motion.div
+              key={project.title}
+              className="border-b border-border"
+              initial={{ opacity: 0, y: -6, filter: "blur(4px)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              transition={{ duration: .3, ease: "easeIn", delay: .1 * i }}
+            >
               <div className="py-4">
                 <div className="flex items-center justify-between">
                   <div className="lg:flex gap-5 items-center w-full">
@@ -81,10 +94,10 @@ export default function Projects() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-      </section>
+      </motion.section>
     </main>
   )
 }
