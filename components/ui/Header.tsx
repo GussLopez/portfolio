@@ -43,12 +43,8 @@ export default function Header() {
           className="size-10 opacity-70 hover:opacity-100 group cursor-pointer"
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         >
-
-          {theme === 'dark' ? (
-            <Sun className="size-5.5 transition-transform duration-500 group-hover:rotate-32" />
-          ) : (
-            <Moon className="size-5.5 transition-transform duration-500 group-hover:rotate-32" />
-          )}
+          <Sun className="block dark:hidden size-5.5 transition-transform duration-500 group-hover:rotate-32" />
+          <Moon className="hidden dark:block size-5.5 transition-transform duration-500 group-hover:rotate-32" />
         </Button>
       </div>
     </nav>
