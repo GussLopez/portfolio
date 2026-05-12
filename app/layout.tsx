@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import { TooltipProvider } from "@/components/animate-ui/components/animate/tooltip";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/Footer";
+import { ScrollProgress } from "@/components/ui/scroll-progress";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,6 +45,7 @@ export default function RootLayout({
           <TooltipProvider>
             {children}
             <Navbar />
+            <ScrollProgress />
           </TooltipProvider>
           <Footer />
         </ThemeProvider>
