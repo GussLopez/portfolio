@@ -7,11 +7,12 @@ import { useEffect, useState } from "react";
 import Dialog from "../smoothui/dialog";
 import { Button } from "../ui/button";
 import { images } from "@/data/stack";
+import { ExternalLink } from "lucide-react";
 
 interface SelectedTechData {
   img: string;
   name: string;
-  domain: string;
+  link: string;
   description: string;
   bgWhite?: boolean
 }
@@ -27,7 +28,7 @@ export default function TechStack() {
   }, []);
 
   if (!mounted) return null;
-  
+
   const LOGO_DEV_PUBLIC_KEY = process.env.NEXT_PUBLIC_LOGO_DEV_KEY || 'pk_JMZrCYTOT_m5lHGrHln_xg';
   return (
     <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 gap-4">
@@ -59,7 +60,7 @@ export default function TechStack() {
                 img: item.variant
                   ? item.variant
                   : `https://img.logo.dev/${item.domain}?token=${LOGO_DEV_PUBLIC_KEY}&format=png&theme=${theme}`,
-                domain: item.domain,
+                link: item.link,
                 name: item.name,
                 description: item.description,
                 bgWhite: item.bgWhite
@@ -73,6 +74,7 @@ export default function TechStack() {
                 ? item.variant
                 : `https://img.logo.dev/${item.domain}?token=${LOGO_DEV_PUBLIC_KEY}&format=png&theme=${theme}`}
               alt={`${item.domain} Logo`}
+              loading="eager"
               width={128}
               height={128}
               className={`rounded-sm object-contain ${item.bgWhite && 'p-2 bg-white'}`}
@@ -84,12 +86,18 @@ export default function TechStack() {
       <Dialog
         footer={
           <Button
-          className="w-full"
-          variant={'outline'}
-          onClick={() => setOpen(false)}
-           asChild 
+            className="w-full"
+            variant={'outline'}
+            onClick={() => setOpen(false)}
+            asChild
           >
-            Got it
+            <a
+              href={selectedTech?.link}
+              target="_blank"
+            >
+              <ExternalLink />
+              Ver web
+            </a>
           </Button>
         }
         onOpenChange={setOpen}
