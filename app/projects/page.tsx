@@ -1,11 +1,16 @@
-'use client'
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { allProjects } from "@/data/projects";
 import { Separator } from "@/components/ui/separator";
 import { Tooltip, TooltipContent } from "@/components/animate-ui/components/animate/tooltip";
 import { TooltipTrigger } from "@/components/animate-ui/primitives/animate/tooltip";
-import { motion } from "motion/react";
+import * as motion from "motion/react-client";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Projects | Gustavo López Alvarado',
+  description: 'Explora mis proyectos realizados'
+}
 
 export default function Projects() {
 
