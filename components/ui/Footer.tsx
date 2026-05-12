@@ -14,7 +14,7 @@ export default function Footer() {
           <span className="uppercase text-xs text-muted-foreground font-semibold">Contacto:</span>
           <a
             href="mailto:gustavolopez819@gmail.com"
-            className="w-fit text-sm opacity-80 hover:opacity-100 transition-all duration-175">gustavolopez819@gmail.com</a>
+            className="w-fit text-sm text-white/80 hover:text-white transition-all duration-175">gustavolopez819@gmail.com</a>
         </div>
 
         <div className="flex flex-col gap-3">
@@ -24,7 +24,7 @@ export default function Footer() {
               <li key={social.name}>
                 <a
                   href={social.link}
-                  className="flex items-center gap-1.5 px-3 py-2 border border-border dark:border-muted text-sm uppercase rounded-[3px] hover:bg-border/40 dark:hover:bg-muted transition-all tracking-wide font-medium group"
+                  className="flex items-center gap-1.5 px-3 py-2 border border-border dark:border-muted text-sm uppercase rounded-[6px] hover:bg-border/40 dark:hover:bg-muted transition-all tracking-wide font-medium group"
                   target="_blank"
                 >
                   {social.name}
