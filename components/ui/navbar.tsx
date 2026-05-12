@@ -17,12 +17,12 @@ export default function Navbar() {
       path: '/',
       icon: <House className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
     },
-    {
+   /*  {
       link: 'About',
       path: '/about',
       icon: <User className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
 
-    },
+    }, */
     {
       link: 'Proyectos',
       path: '/projects',
