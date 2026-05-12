@@ -52,11 +52,11 @@ export default function Navbar() {
     return activePath.startsWith(link.path);
   });
   return (
-    <div className="fixed bottom-6 right-1/2 translate-x-1/2 rounded-[3px] text-sm border border-input bg-muted">
+    <div className="fixed bottom-6 right-1/2 translate-x-1/2 rounded-[6px] text-sm border border-input bg-muted">
       <div className="block md:hidden">
         <DropdownMenu modal={false}>
           <DropdownMenuTrigger asChild>
-            <div className="flex items-center gap-1.5 p-1.5">
+            <div className="flex items-center gap-1.5 p-1.5 z-99">
               <div className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-foreground">
                 <Brackets className="size-4 text-brand stroke-3" />
                 {currentLink?.link}
@@ -72,7 +72,7 @@ export default function Navbar() {
             sideOffset={12}
             side="top"
             align="center"
-            className="min-w-65 rounded-[3px]"
+            className="min-w-65 rounded-[6px]"
           >
             <DropdownMenuGroup>
               {links.map((link, i) => (
@@ -83,7 +83,7 @@ export default function Navbar() {
                 >
                   <Link
                     href={link.path}
-                    className={`flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium duration-150 rounded-[3px] hover:text-white!`}
+                    className={`flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium duration-150 rounded-[6px] hover:text-white!`}
                   >
                     {link.link}
                     {link.icon}
@@ -97,7 +97,7 @@ export default function Navbar() {
                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                 className="p-0"
               >
-                <span className="flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium rounded-[3px] hover:text-white!">
+                <span className="flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium rounded-[6px] hover:text-white!">
                   Tema
                   {theme === 'dark' ? (
                     <Sun className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
@@ -107,7 +107,7 @@ export default function Navbar() {
                 </span>
               </DropdownMenuItem>
               <DropdownMenuItem className="p-0">
-                <span className="flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium rounded-[3px] hover:text-white!">
+                <span className="flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium rounded-[6px] hover:text-white!">
                   Idioma
                   <Languages className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
                 </span>
@@ -121,7 +121,7 @@ export default function Navbar() {
           <Link
             key={i}
             href={link.path}
-            className={`rounded-[3px] px-3 py-1.5 text-sm font-medium hover:text-foreground 
+            className={`rounded-[6px] px-3 py-1.5 text-sm font-medium hover:text-foreground 
                ${isActive(link.path) ? 'bg-brand! text-white!' : ''}
               }`}
           >
@@ -131,13 +131,13 @@ export default function Navbar() {
         <Separator orientation="vertical" className="bg-input/40" />
         <DropdownMenu modal={false}>
           <DropdownMenuTrigger asChild>
-            <button className="p-2 cursor-pointer text-muted-foreground rounded-[3px] duration-150 focus-visible:outline-none hover:text-foreground">
+            <button className="p-2 cursor-pointer text-muted-foreground rounded-[6px] duration-150 focus-visible:outline-none hover:text-foreground">
               <Settings className="size-4" />
               <span className="sr-only">Abrir menu de configuración</span>
             </button>
           </DropdownMenuTrigger>
           <DropdownMenuContent
-            className="min-w-42 rounded-[3px]"
+            className="min-w-42 rounded-[6px]"
             align="end"
             side="top"
             sideOffset={13}
