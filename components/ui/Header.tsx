@@ -3,12 +3,18 @@ import { useTheme } from "next-themes";
 import { Button } from "./button";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import * as motion from 'motion/react-client'
 
 export default function Header() {
   const { theme, setTheme } = useTheme()
 
   return (
-    <nav className="container max-w-3xl mx-auto px-8 py-4 flex items-center justify-between bg-background">
+    <motion.nav
+    initial={{ opacity: 0, y: -5, filter: "blur(4px)" }}
+    animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+    transition={{ duration: .3, ease: "easeIn" }}
+      className="container max-w-3xl mx-auto px-8 py-4 flex items-center justify-between bg-background"
+    >
       <Link
         href={'/'}
         className="font-semibold opacity-70 hover:opacity-100 transition-all"
@@ -47,6 +53,6 @@ export default function Header() {
           <Moon className="hidden dark:block size-5.5 transition-transform duration-500 group-hover:rotate-32" />
         </Button>
       </div>
-    </nav>
+    </motion.nav>
   )
 }
