@@ -1,5 +1,11 @@
 import TechStack from "@/components/stack/tech-stack";
 import * as motion from "motion/react-client";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Stack | Gustavo López Alvarado',
+  description: 'Explora el stack tecnológico que utilizo para desarrollar aplicaciones web modernas, escalables y enfocadas en rendimiento, experiencia de usuario y diseño atractivo.'
+}
 
 export default function StackPage() {
 
