@@ -1,6 +1,5 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
 
 import { Separator } from "./separator";
 import { projects } from "@/data/projects";
@@ -9,7 +8,6 @@ import { motion } from "motion/react";
 
 
 export default function Proyects() {
-  const { t } = useTranslation();
 
   return (
     <motion.section
