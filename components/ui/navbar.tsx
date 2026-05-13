@@ -6,6 +6,7 @@ import { Separator } from "./separator";
 import { Brackets, ChevronsUpDown, Code, House, Languages, Layers, Moon, Settings, Sun, User } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "./dropdown-menu";
 import { useTheme } from "next-themes";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -13,18 +14,18 @@ export default function Navbar() {
 
   const links = [
     {
-      link: 'Inicio',
+      link: 'Home',
       path: '/',
       icon: <House className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
     },
-   /*  {
-      link: 'About',
-      path: '/about',
-      icon: <User className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
-
-    }, */
+    /*  {
+       link: 'About',
+       path: '/about',
+       icon: <User className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
+ 
+     }, */
     {
-      link: 'Proyectos',
+      link: 'Projects',
       path: '/projects',
       icon: <Code className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
 
@@ -93,23 +94,29 @@ export default function Navbar() {
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
+              <DropdownMenuItem className="p-0">
+                <span className="flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium rounded-[6px] hover:text-white!">
+                  Github
+                  <FaGithub className="size-4.5 text-black/80 group-focus/dropdown-menu-item:fill-white" />
+                </span>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="p-0">
+                <span className="flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium rounded-[6px] hover:text-white!">
+                  LinkedIn
+                  <FaLinkedin className="size-4.5 text-black/80 group-focus/dropdown-menu-item:fill-white" />
+                </span>
+              </DropdownMenuItem>
               <DropdownMenuItem
                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                 className="p-0"
               >
                 <span className="flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium rounded-[6px] hover:text-white!">
-                  Tema
+                  Theme
                   {theme === 'dark' ? (
-                    <Sun className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
+                    <Sun className="size-4.5 text-black/80 group-focus/dropdown-menu-item:stroke-white" />
                   ) : (
-                    <Moon className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
+                    <Moon className="size-4.5 text-black/80 group-focus/dropdown-menu-item:stroke-white" />
                   )}
-                </span>
-              </DropdownMenuItem>
-              <DropdownMenuItem className="p-0">
-                <span className="flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium rounded-[6px] hover:text-white!">
-                  Idioma
-                  <Languages className="size-4.5 group-focus/dropdown-menu-item:stroke-white" />
                 </span>
               </DropdownMenuItem>
             </DropdownMenuGroup>
@@ -129,38 +136,30 @@ export default function Navbar() {
           </Link>
         ))}
         <Separator orientation="vertical" className="bg-input/40" />
-        <DropdownMenu modal={false}>
-          <DropdownMenuTrigger asChild>
-            <button className="p-2 cursor-pointer text-muted-foreground rounded-[6px] duration-150 focus-visible:outline-none hover:text-foreground">
-              <Settings className="size-4" />
-              <span className="sr-only">Abrir menu de configuración</span>
-            </button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent
-            className="min-w-42 rounded-[6px]"
-            align="end"
-            side="top"
-            sideOffset={13}
-          >
-            <DropdownMenuGroup>
-              <DropdownMenuItem
-                className="flex px-3 justify-between items-center py-2 focus:text-white"
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              >
-                Tema
-                {theme === 'dark' ? (
-                  <Sun className="size-4.5 text-muted-foreground group-focus/dropdown-menu-item:stroke-white transition-colors" />
-                ) : (
-                  <Moon className="size-4.5 text-muted-foreground group-focus/dropdown-menu-item:stroke-white transition-colors" />
-                )}
-              </DropdownMenuItem>
-              <DropdownMenuItem className="flex px-3 justify-between items-center py-2 focus:text-white">
-                Idioma
-                <Languages className="size-4.5 text-muted-foreground group-focus/dropdown-menu-item:stroke-white transition-colors" />
-              </DropdownMenuItem>
-            </DropdownMenuGroup>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <a
+          href="https://www.linkedin.com/in/gusslopez"
+          target="_blank"
+          className="p-2 cursor-pointer text-muted-foreground rounded-[6px] duration-150 hover:text-foreground"
+        >
+          <FaLinkedin className="size-4" />
+          <span className="sr-only">Open LinkedIn</span>
+        </a>
+        <a
+          href="https://github.com/GussLopez"
+          target="_blank"
+          className="p-2 cursor-pointer text-muted-foreground rounded-[6px] duration-150 hover:text-foreground"
+        >
+          <FaGithub className="size-4" />
+          <span className="sr-only">Change theme</span>
+        </a>
+        <button
+          className="p-2 cursor-pointer text-muted-foreground rounded-[6px] duration-300 hover:text-foreground hover:rotate-25"
+          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        >
+          <Sun className="hidden dark:block size-4" />
+          <Moon className="block dark:hidden size-4" />
+          <span className="sr-only">Change theme</span>
+        </button>
       </div>
     </div>
   )
