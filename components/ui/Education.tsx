@@ -1,10 +1,8 @@
-import { useTranslation } from "react-i18next";
 import { Separator } from "./separator";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "motion/react";
 
 export default function Education() {
-  const { t } = useTranslation();
 
   return (
     <motion.section

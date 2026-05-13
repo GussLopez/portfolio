@@ -5,20 +5,20 @@ export default function Footer() {
   const social = [
     { name: 'LinkedIn', link: 'https://www.linkedin.com/in/gusslopez' },
     { name: 'Github', link: 'https://github.com/GussLopez' },
-    { name: 'Instagram', link: '#' },
+    { name: 'Instagram', link: 'https://www.instagram.com/guss_lpz' },
   ]
   return (
     <footer className="container max-w-3xl mx-auto px-8 py-4 pb-40 mt-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-5 border-t border-border">
         <div className="flex flex-col gap-3">
-          <span className="uppercase text-xs text-muted-foreground font-semibold">Contacto:</span>
+          <span className="uppercase text-xs text-muted-foreground font-semibold">Contact:</span>
           <a
             href="mailto:gustavolopez819@gmail.com"
             className="w-fit text-sm text-white/80 hover:text-white transition-all duration-175">gustavolopez819@gmail.com</a>
         </div>
 
         <div className="flex flex-col gap-3">
-          <span className="uppercase text-xs text-muted-foreground font-semibold">Redes:</span>
+          <span className="uppercase text-xs text-muted-foreground font-semibold">Social:</span>
           <ul className="flex flex-col space-y-2">
             {social.map((social) => (
               <li key={social.name}>

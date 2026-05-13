@@ -1,6 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
 import { Separator } from "./separator";
-import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 
 export default function Experience() {
