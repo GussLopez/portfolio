@@ -77,7 +77,7 @@ export default async function ProjectPage({ params }: ProjectPropsPage) {
           </p>
           {project.p2 && <p className="article-p">{project.p2}</p>}
 
-          <h2 className="article-heading">Características Principales</h2>
+          <h2 className="article-heading">Key Features</h2>
           <div className="grid gap-6">
             {project.characteristics?.map((char, i) => (
               <div

@@ -11,7 +11,7 @@ export const projects = [
     title: "Flyzzio",
     href: "https://flyzzio.vercel.app/admin",
     description:
-      "Sistema de inventario y punto de venta desarrollado para optimizar la gestión de productos, ventas y control de stock.",
+      "Inventory and point-of-sale system developed to optimize product management, sales, and stock control.",
     slug: "flyzzio",
     technologies: [
       {
@@ -40,7 +40,7 @@ export const projects = [
     title: "Hisgroup Company",
     href: "https://hisgroupcompany.com",
     description:
-      "Plataforma web empresarial que permite a los clientes visualizar productos de proveedores y gestionar órdenes de compra.",
+      "Business web platform that allows clients to browse supplier products and manage purchase orders.",
     slug: "hisgroup-company",
     technologies: [
       {
@@ -74,7 +74,7 @@ export const projects = [
     title: "Meeti",
     href: "#",
     description:
-      "Aplicación web para crear y administrar reuniones presenciales y virtuales con una experiencia moderna e intuitiva.",
+      "Web app for creating and managing in-person and virtual meetings with a modern and intuitive experience.",
     slug: "meeti",
     technologies: [
       {
@@ -106,33 +106,33 @@ export const allProjects = [
     title: "Flyzzio",
     href: "https://flyzzio.vercel.app/admin",
     description:
-      "Sistema de inventario y punto de venta desarrollado para optimizar la gestión de productos, ventas y control de stock.",
+      "Inventory and point-of-sale system developed to optimize product management, sales, and stock control.",
     slug: "flyzzio",
-    quote: "Gestiona tu negocio y tus ventas sin esfuerzo.",
+    quote: "Manage your business and sales effortlessly.",
     published: new Date(2026, 4, 13),
     preview: "/img/projects/flyzzio-preview.webp",
-    p1: "es una herramienta para gestionar el inventario de tu negocio, generar ventas y reportes para tomar decisiones basadas en datos. Está diseñada para que la gestión sea más simple, proporcionando interfaces intuitivas y un flujo de trabajo eficiente que facilita el control de productos, clientes y movimientos de ventas en tiempo real.",
-    p2: "El sistema permite optimizar procesos administrativos, reducir errores manuales y obtener información clave del negocio mediante reportes y estadísticas detalladas.",
+    p1: "is a tool designed to manage your business inventory, generate sales, and create reports for data-driven decision-making. It is built to simplify management by providing intuitive interfaces and an efficient workflow that makes it easier to control products, customers, and sales activity in real time.",
+    p2: "The system helps optimize administrative processes, reduce manual errors, and provide key business insights through detailed reports and statistics.",
     characteristics: [
       {
-        characteristic: "Gestión de ventas",
-        desc: "Registro y cancelación de ventas en tiempo real.",
+        characteristic: "Sales management",
+        desc: "Real-time sales registration and cancellation.",
       },
       {
-        characteristic: "Arquitectura multitenant",
-        desc: "Soporte para múltiples negocios en una sola plataforma.",
+        characteristic: "Multi-tenant architecture",
+        desc: "Support for multiple businesses within a single platform.",
       },
       {
-        characteristic: "Proveedores",
-        desc: "Administración completa de proveedores.",
+        characteristic: "Suppliers",
+        desc: "Complete supplier management.",
       },
       {
-        characteristic: "Roles y permisos",
-        desc: "Control de acceso para empleados.",
+        characteristic: "Roles and permissions",
+        desc: "Access control for employees.",
       },
       {
-        characteristic: "Control de inventario",
-        desc: "Entradas y salidas de productos.",
+        characteristic: "Inventory control",
+        desc: "Product stock entries and exits.",
       },
     ],
     technologies: [
@@ -162,34 +162,34 @@ export const allProjects = [
     title: "Hisgroup Company",
     href: "https://hisgroupcompany.com",
     description:
-      "Plataforma web empresarial que permite a los clientes visualizar productos de proveedores y gestionar órdenes de compra.",
+      "Business web platform that allows clients to browse supplier products and manage purchase orders.",
     slug: "hisgroup-company",
     published: new Date(2025, 5, 17),
     quote:
-      "Seguimiento de pedidos y gestión e-commerce en una plataforma conectada con múltiples proveedores.",
+      "Order tracking and e-commerce management in a platform connected to multiple suppliers.",
     preview: "/img/projects/hisgroup-preview.webp",
-    p1: "es una plataforma e-commerce enfocada en la gestión y seguimiento de pedidos, diseñada para conectar a administradores y clientes en un solo sistema. La aplicación permite administrar productos, categorías y órdenes de compra mediante un panel administrativo intuitivo, facilitando la organización y control de operaciones comerciales.",
-    p2: "El sistema integra APIs de distintos proveedores para mostrar productos dinámicamente dentro del catálogo, permitiendo mantener información actualizada y escalable. Además, los clientes pueden visualizar el estado y seguimiento de sus pedidos en tiempo real, mejorando la experiencia de compra y la comunicación con la empresa.",
+    p1: "is an e-commerce platform focused on order management and tracking, designed to connect administrators and customers within a single system. The application allows products, categories, and purchase orders to be managed through an intuitive admin dashboard, making commercial operations easier to organize and control.",
+    p2: "The system integrates APIs from different suppliers to dynamically display products within the catalog, keeping information updated and scalable. In addition, customers can track the status of their orders in real time, improving the shopping experience and communication with the company.",
     characteristics: [
       {
-        characteristic: "Panel administrativo",
-        desc: "Gestión de productos, categorías y órdenes de compra.",
+        characteristic: "Admin dashboard",
+        desc: "Management of products, categories, and purchase orders.",
       },
       {
-        characteristic: "Seguimiento de pedidos",
-        desc: "Visualización del estado de pedidos en tiempo real.",
+        characteristic: "Order tracking",
+        desc: "Real-time order status visualization.",
       },
       {
-        characteristic: "Integración de APIs",
-        desc: "Sincronización de productos desde múltiples proveedores.",
+        characteristic: "API integrations",
+        desc: "Product synchronization from multiple suppliers.",
       },
       {
-        characteristic: "Gestión de catálogo",
-        desc: "Creación y administración de productos y categorías.",
+        characteristic: "Catalog management",
+        desc: "Creation and administration of products and categories.",
       },
       {
-        characteristic: "Sistema e-commerce",
-        desc: "Experiencia de compra completa para clientes.",
+        characteristic: "E-commerce system",
+        desc: "Complete shopping experience for customers.",
       },
     ],
     technologies: [
@@ -224,37 +224,37 @@ export const allProjects = [
     title: "Meeti",
     href: "#",
     description:
-      "Aplicación web para crear y administrar reuniones presenciales y virtuales con una experiencia moderna e intuitiva.",
+      "Web app for creating and managing in-person and virtual meetings with a modern and intuitive experience.",
     slug: "meeti",
     github: "https://github.com/GussLopez/meeti",
     published: new Date(2026, 5, 3),
-    quote: "Organiza reuniones, crea comunidades y conoce nuevas personas.",
-    p1: "es una aplicación web diseñada para crear y administrar reuniones presenciales y virtuales mediante una experiencia moderna, intuitiva y enfocada en la colaboración. La plataforma permite a los usuarios organizar eventos, administrar comunidades y participar en reuniones de manera sencilla desde cualquier dispositivo.",
-    p2: "Además, los usuarios pueden unirse a comunidades, gestionar sus sesiones activas y mantener sincronizada su actividad entre diferentes dispositivos. El proyecto fue desarrollado con una arquitectura moderna utilizando Next.js, Drizzle ORM y Better Auth para ofrecer un sistema rápido, seguro y escalable.",
+    quote: "Organize meetings, build communities, and meet new people.",
+    p1: "is a web application designed to create and manage in-person and virtual meetings through a modern, intuitive, and collaboration-focused experience. The platform allows users to organize events, manage communities, and participate in meetings easily from any device.",
+    p2: "Additionally, users can join communities, manage active sessions, and keep their activity synchronized across multiple devices. The project was built with a modern architecture using Next.js, Drizzle ORM, and Better Auth to provide a fast, secure, and scalable system.",
     characteristics: [
       {
-        characteristic: "Gestión de reuniones",
-        desc: "Creación y administración de reuniones virtuales y presenciales.",
+        characteristic: "Meeting management",
+        desc: "Creation and management of virtual and in-person meetings.",
       },
       {
-        characteristic: "Comunidades",
-        desc: "Creación y participación en comunidades dentro de la plataforma.",
+        characteristic: "Communities",
+        desc: "Create and participate in communities within the platform.",
       },
       {
-        characteristic: "Sesiones activas",
-        desc: "Visualización y control de sesiones abiertas en otros dispositivos.",
+        characteristic: "Active sessions",
+        desc: "View and manage sessions opened on other devices.",
       },
       {
-        characteristic: "Autenticación segura",
-        desc: "Sistema de autenticación moderno usando Better Auth.",
+        characteristic: "Secure authentication",
+        desc: "Modern authentication system using Better Auth.",
       },
       {
-        characteristic: "Arquitectura moderna",
-        desc: "Desarrollado con Next.js y Drizzle ORM.",
+        characteristic: "Modern architecture",
+        desc: "Built with Next.js and Drizzle ORM.",
       },
       {
-        characteristic: "Experiencia responsive",
-        desc: "Interfaz optimizada para escritorio y dispositivos móviles.",
+        characteristic: "Responsive experience",
+        desc: "Interface optimized for desktop and mobile devices.",
       },
     ],
     technologies: [
@@ -284,38 +284,38 @@ export const allProjects = [
     title: "Grupo Saimo",
     href: "https://gruposaimo.com",
     description:
-      "Sitio web corporativo con múltiples secciones informativas y catálogo digital orientado a proveedores y clientes.",
+      "Corporate website with multiple informational sections and a digital catalog focused on suppliers and customers.",
     slug: "grupo-saimo",
     published: new Date(2025, 9, 2),
     preview: "/img/projects/saimo-preview.webp",
     quote:
-      "Catálogo dinámico, búsqueda avanzada y una experiencia moderna para explorar productos y servicios.",
-    p1: "es una aplicación web corporativa enfocada en la visualización de productos y servicios mediante una experiencia moderna, dinámica e intuitiva. La plataforma permite a los usuarios explorar un catálogo de productos integrado desde APIs de proveedores externos, facilitando la búsqueda y navegación de información en tiempo real.",
-    p2: "Además del catálogo, el sitio incluye múltiples secciones informativas sobre los servicios y soluciones que ofrece la empresa. La landing page fue diseñada con animaciones fluidas utilizando Motion para brindar una experiencia visual más atractiva, moderna y profesional.",
+      "Dynamic catalog, advanced search, and a modern experience for exploring products and services.",
+    p1: "is a corporate web application focused on showcasing products and services through a modern, dynamic, and intuitive experience. The platform allows users to browse a product catalog integrated from external supplier APIs, making real-time product discovery and navigation easier.",
+    p2: "In addition to the catalog, the website includes multiple informational sections about the company’s services and solutions. The landing page was designed with smooth animations using Motion to provide a more engaging, modern, and professional visual experience.",
     characteristics: [
       {
-        characteristic: "Catálogo dinámico",
-        desc: "Productos obtenidos desde APIs de proveedores externos.",
+        characteristic: "Dynamic catalog",
+        desc: "Products fetched from external supplier APIs.",
       },
       {
-        characteristic: "Búsqueda avanzada",
-        desc: "Filtrado de productos por marcas y categorías.",
+        characteristic: "Advanced search",
+        desc: "Filter products by brands and categories.",
       },
       {
-        characteristic: "Información corporativa",
-        desc: "Secciones informativas sobre servicios y soluciones.",
+        characteristic: "Corporate information",
+        desc: "Informational sections about services and solutions.",
       },
       {
-        characteristic: "Landing interactiva",
-        desc: "Animaciones modernas desarrolladas con Motion.",
+        characteristic: "Interactive landing page",
+        desc: "Modern animations built with Motion.",
       },
       {
-        characteristic: "Experiencia responsive",
-        desc: "Diseño optimizado para dispositivos móviles y escritorio.",
+        characteristic: "Responsive experience",
+        desc: "Optimized design for mobile and desktop devices.",
       },
       {
-        characteristic: "Arquitectura escalable",
-        desc: "Estructura preparada para integrar nuevos proveedores.",
+        characteristic: "Scalable architecture",
+        desc: "Structure prepared to integrate new suppliers.",
       },
     ],
     technologies: [
@@ -350,34 +350,34 @@ export const allProjects = [
     title: "Tacos Rigo",
     href: "https://tacosrigo.com",
     description:
-      "Página web para restaurante en Cancún enfocada en mostrar el menú, información del negocio y canales de contacto.",
+      "Restaurant website in Cancun focused on showcasing the menu, business information, and contact channels.",
     slug: "tacos-rigo",
     preview: "/img/projects/rigo-preview.webp",
     quote:
-      "Explora el menú, encuentra sucursales y descubre la experiencia de Tacos Rigo desde cualquier dispositivo.",
+      "Explore the menu, find locations, and discover the Tacos Rigo experience from any device.",
     published: new Date(2025, 8, 27),
-    p1: "es una página web corporativa desarrollada para presentar la identidad, servicios y oferta gastronómica del restaurante mediante una experiencia moderna y accesible. La plataforma permite a los usuarios explorar el menú, conocer las sucursales disponibles y obtener información relevante sobre el negocio desde cualquier dispositivo. El sitio fue diseñado con un enfoque visual atractivo con relación a la marca y responsive para mejorar la experiencia del usuario y fortalecer la presencia digital del restaurante.",
-    p2: "Además, incluye distintas secciones informativas orientadas a facilitar la navegación y promover los servicios ofrecidos por la marca.",
+    p1: "is a corporate website developed to showcase the restaurant’s identity, services, and food offerings through a modern and accessible experience. The platform allows users to explore the menu, discover available locations, and access relevant business information from any device. The website was designed with an attractive visual style aligned with the brand and a responsive approach to improve user experience and strengthen the restaurant’s digital presence.",
+    p2: "Additionally, it includes several informational sections designed to simplify navigation and promote the services offered by the brand.",
     characteristics: [
       {
-        characteristic: "Visualización de menú",
-        desc: "Exploración de productos y categorías del restaurante.",
+        characteristic: "Menu showcase",
+        desc: "Browse restaurant products and categories.",
       },
       {
-        characteristic: "Sucursales",
-        desc: "Información y ubicación de las diferentes sucursales.",
+        characteristic: "Locations",
+        desc: "Information and locations of different branches.",
       },
       {
-        characteristic: "Diseño responsive",
-        desc: "Experiencia optimizada para móviles y escritorio.",
+        characteristic: "Responsive design",
+        desc: "Optimized experience for mobile and desktop.",
       },
       {
-        characteristic: "Información corporativa",
-        desc: "Secciones sobre servicios y datos del restaurante.",
+        characteristic: "Corporate information",
+        desc: "Sections about restaurant services and details.",
       },
       {
-        characteristic: "Presencia digital",
-        desc: "Sitio orientado a mejorar la imagen online del negocio.",
+        characteristic: "Digital presence",
+        desc: "Website focused on improving the business’s online image.",
       },
     ],
     technologies: [

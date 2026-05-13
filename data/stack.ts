@@ -4,35 +4,35 @@ export const images = [
     link: "https://typescriptlang.org",
     name: "Typescript",
     description:
-      "Lenguaje que utilizo para escribir código más seguro, escalable y fácil de mantener.",
+      "Language I use to write safer, scalable, and easier-to-maintain code.",
   },
   {
     domain: "next.org",
     link: "https://nextjs.org",
     name: "Next.js",
     description:
-      "Framework React que uso para producción por su rendimiento, SEO y más",
+      "React framework I use for production because of its performance, SEO, and more.",
   },
   {
     domain: "vercel.com",
     link: "https://vercel.com",
     name: "Vercel",
     description:
-      "Despliegues en minutos, hosting simple y rápido",
+      "Deployments in minutes with simple and fast hosting.",
   },
   {
     domain: "tailwindcss.com",
     link: "https://tailwindcss.com",
     name: "Tailwind CSS",
     description:
-      "Framework CSS que utilizo para crear UI limpias y responsivas.",
+      "CSS framework I use to build clean and responsive UIs.",
   },
   {
     domain: "motion.dev",
     link: "https://motion.dev",
     name: "Motion",
     description:
-      "Librería que utilizo para agregar animaciones fluidas e interacciones atractivas.",
+      "Library I use to add smooth animations and engaging interactions.",
   },
   {
     domain: "shadcn.com",
@@ -41,7 +41,7 @@ export const images = [
     bgWhite: true,
     name: "Shadcn UI",
     description:
-      "Colección de componentes que utilizo para construir interfaces limpias, modernas y reutilizables.",
+      "Component collection I use to build clean, modern, and reusable interfaces.",
   },
   {
     domain: "expressjs.com",
@@ -50,7 +50,7 @@ export const images = [
     bgWhite: true,
     name: "Express",
     description:
-      "Framework backend que utilizo para crear APIs rápidas, escalables y organizadas.",
+      "Backend framework I use to create fast, scalable, and organized APIs.",
   },
   {
     domain: "supabase.com",
@@ -58,7 +58,7 @@ export const images = [
     name: "Supabase",
     bgWhite: false,
     description:
-      "Backend, base de datos, autenticación. Todo en uno.",
+      "Backend, database, and authentication. All in one.",
   },
   {
     domain: "postgresql.org",
@@ -66,21 +66,21 @@ export const images = [
     variant: "/img/stack/postgresql.png",
     name: "PostgreSQL",
     description:
-      "Base de datos relacional que utilizo por su estabilidad, rendimiento y escalabilidad.",
+      "Relational database I use for its stability, performance, and scalability.",
   },
   {
     domain: "sequelize.org",
     link: "https://sequelize.org",
     name: "Sequelize",
     description:
-      "ORM que utilizo para manejar bases de datos SQL de forma más limpia y eficiente.",
+      "ORM I use to manage SQL databases in a cleaner and more efficient way.",
   },
   {
     domain: "tableplus.com",
     link: "https://tableplus.com",
     name: "Tableplus",
     description:
-      "Herramienta que utilizo para administrar bases de datos de manera rápida y visual.",
+      "Tool I use to manage databases quickly and visually.",
   },
   {
     domain: "postman.com",
@@ -88,20 +88,20 @@ export const images = [
     variant: "/img/stack/postman.png",
     name: "Postman",
     description:
-      "Aplicación que utilizo para probar, documentar y consumir APIs.",
+      "Application I use to test, document, and consume APIs.",
   },
   {
     domain: "notion.com",
     link: "https://notion.com",
     name: "Notion",
     description:
-      "Creo, almaceno y organizo ideas, tareas y ideas de proyectos.",
+      "I create, store, and organize ideas, tasks, and project concepts.",
   },
   {
     domain: "figma.com",
     link: "https://figma.com",
     name: "Figma",
     description:
-      "Prototipos, interfaces y diseños con trabajo colaborativo.",
+      "Prototypes, interfaces, and designs with collaborative workflows.",
   },
 ];

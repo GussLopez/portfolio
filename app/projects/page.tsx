@@ -30,7 +30,7 @@ export default function Projects() {
             <ArrowLeft className="size-3.5 group-hover:-translate-x-0.5 transition-transform duration-300" />
             Back
           </Link>
-          <h2 className="text-sm font-medium">Proyectos</h2>
+          <h2 className="text-sm font-medium">Projects</h2>
         </div>
 
         <div className="mt-6">
@@ -89,6 +89,7 @@ export default function Projects() {
                         className="p-2 border border-input rounded-md group"
                       >
                         <ArrowUpRight className="size-4 opacity-70 group-hover:opacity-100 transition-all" />
+                        <span className="sr-only">Open project</span>
                       </Link>
                     </div>
                   </div>
