@@ -17,6 +17,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
 import { X } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
@@ -206,6 +207,12 @@ export default function Dialog({
       setShowContent(false);
     }
   }, [isOpen]);
+
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    setImageLoaded(false);
+  }, [img]);
   return (
     <DialogRadix.Root
       onOpenChange={handleOpenChange}
@@ -277,15 +284,24 @@ export default function Dialog({
                   >
                     <DialogHeader>
                       <div className="flex items-center gap-3">
-                        {img && (
-                          <div className="max-w-12 overflow-hidden">
+                        <div className="relative w-12 h-12 shrink-0">
+                          {!imageLoaded && (
+                            <Skeleton className="absolute inset-0 w-full h-full rounded-sm" />
+                          )}
+
+                          {img && (
                             <img
                               src={img}
                               alt={`${title} Logo`}
-                             className={`w-full h-auto rounded-sm object-contain ${bgWhite && 'p-2 bg-white'}`}
+                              onLoad={() => setImageLoaded(true)}
+                              className={cn(
+                                "w-full h-full rounded-sm object-contain transition-opacity duration-200",
+                                imageLoaded ? "opacity-100" : "opacity-0",
+                                bgWhite && "p-2 bg-white"
+                              )}
                             />
-                          </div>
-                        )}
+                          )}
+                        </div>
                         {title &&
                           <DialogTitle className="text-lg">
                             {title}
