@@ -9,7 +9,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'Projects | Gustavo López Alvarado',
-  description: 'Explora mis proyectos realizados'
+  description: 'Explore all my projects'
 }
 
 export default function Projects() {

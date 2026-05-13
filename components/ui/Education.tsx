@@ -13,7 +13,7 @@ export default function Education() {
       transition={{ duration: .3, ease: "easeIn" }}
       className="container max-w-3xl mx-auto px-8 py-4 mt-10"
     >
-      <h2 className="text-xl font-medium">{t("education")}</h2>
+      <h2 className="text-xl font-medium">Education</h2>
       <div className="flex gap-5 mt-4">
         <div className="flex flex-col relative">
           <div className="absolute inset-[-5.5px] mt-4.5 h-3 w-3 rounded-full border border-neutral-400 bg-neutral-200 dark:border-neutral-600 dark:bg-neutral-800" />
@@ -22,9 +22,9 @@ export default function Education() {
         </div>
         <div className="mt-1.5">
           <div>
-            <span className="text-xs font-mono text-muted-foreground">2025 - {t("present")}</span>
+            <span className="text-xs font-mono text-muted-foreground">2025 - Present</span>
             <div>
-              <p className="text-lg font-bold">{t("softwareEngEducation")}</p>
+              <p className="text-lg font-bold">Software Engineering</p>
               <div>
                 <a
                   href={'https://utcancun.edu.mx'}
@@ -42,7 +42,7 @@ export default function Education() {
           <div className="mt-5">
             <span className="text-xs font-mono text-muted-foreground">2023 - 2025</span>
             <div>
-              <p className="text-lg font-bold">{t("softwareTechEducation")}</p>
+              <p className="text-lg font-bold">Senior University Technician</p>
               <div>
                 <a
                   href={'https://utcancun.edu.mx'}

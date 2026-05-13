@@ -19,13 +19,12 @@ export default function Proyects() {
       className="container max-w-3xl mx-auto px-8 py-4 mt-10"
     >
       <div className="flex justify-between items-center">
-        <h2 className="text-xl font-medium">{t("proyects")}</h2>
+        <h2 className="text-xl font-medium">Projects</h2>
         <Link
           href="/projects"
           className="flex items-center gap-1.5 text-sm opacity-70 hover:opacity-100 transition-all duration-300 group"
         >
           More
-
           <ArrowRight className="size-3.5 group-hover:translate-x-0.5 transition-transform duration-300" />
         </Link>
       </div>
