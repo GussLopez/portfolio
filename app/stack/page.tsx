@@ -17,8 +17,7 @@ export default function StackPage() {
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: .3, ease: "easeIn" }}
           className="article-heading tracking-[0.01em]"
-        >Mis stack y herramientas favoritas</motion.h1>
-
+        >My stack and favorite tools</motion.h1>
         <TechStack />
       </div>
     </main>

@@ -27,7 +27,7 @@ export const projects = [
       {
         icon: RiTailwindCssFill,
         className: "text-[#06B6D4]",
-        name: "TailwindCSS",
+        name: "Tailwind CSS",
       },
       {
         icon: SiShadcnui,
@@ -61,7 +61,7 @@ export const projects = [
       {
         icon: RiTailwindCssFill,
         className: "text-[#06B6D4]",
-        name: "TailwindCSS",
+        name: "Tailwind CSS",
       },
       {
         icon: SiShadcnui,
@@ -95,7 +95,7 @@ export const projects = [
       {
         icon: RiTailwindCssFill,
         className: "text-[#06B6D4]",
-        name: "TailwindCSS",
+        name: "Tailwind CSS",
       },
     ],
   },
@@ -149,7 +149,7 @@ export const allProjects = [
       {
         icon: RiTailwindCssFill,
         className: "text-[#06B6D4]",
-        name: "TailwindCSS",
+        name: "Tailwind CSS",
       },
       {
         icon: SiShadcnui,
@@ -211,7 +211,7 @@ export const allProjects = [
       {
         icon: RiTailwindCssFill,
         className: "text-[#06B6D4]",
-        name: "TailwindCSS",
+        name: "Tailwind CSS",
       },
       {
         icon: SiShadcnui,
@@ -276,7 +276,7 @@ export const allProjects = [
       {
         icon: RiTailwindCssFill,
         className: "text-[#06B6D4]",
-        name: "TailwindCSS",
+        name: "Tailwind CSS",
       },
     ],
   },
@@ -337,7 +337,7 @@ export const allProjects = [
       {
         icon: RiTailwindCssFill,
         className: "text-[#06B6D4]",
-        name: "TailwindCSS",
+        name: "Tailwind CSS",
       },
       {
         icon: SiShadcnui,
@@ -389,7 +389,7 @@ export const allProjects = [
       {
         icon: RiTailwindCssFill,
         className: "text-[#06B6D4]",
-        name: "TailwindCSS",
+        name: "Tailwind CSS",
       },
     ],
   },
