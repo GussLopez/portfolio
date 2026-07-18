@@ -103,14 +103,14 @@ export const projects = [
 
 export const allProjects = [
   {
-    title: "Flyzzio",
-    href: "https://flyzzio.vercel.app/admin",
+    title: "Surtio",
+    href: "https://surtio.vercel.app",
     description:
       "Inventory and point-of-sale system developed to optimize product management, sales, and stock control.",
-    slug: "flyzzio",
+    slug: "surtio",
     quote: "Manage your business and sales effortlessly.",
     published: new Date(2026, 4, 13),
-    preview: "/img/projects/flyzzio-preview.webp",
+    preview: "/img/projects/surtio-preview.webp",
     p1: "is a tool designed to manage your business inventory, generate sales, and create reports for data-driven decision-making. It is built to simplify management by providing intuitive interfaces and an efficient workflow that makes it easier to control products, customers, and sales activity in real time.",
     p2: "The system helps optimize administrative processes, reduce manual errors, and provide key business insights through detailed reports and statistics.",
     characteristics: [
