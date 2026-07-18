@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { allProjects } from "@/data/projects";
 import { Separator } from "@/components/ui/separator";
@@ -88,7 +88,7 @@ export default function Projects() {
                         href={`/projects/${project.slug}`}
                         className="p-2 border border-input rounded-md group"
                       >
-                        <ArrowUpRight className="size-4 opacity-70 group-hover:opacity-100 transition-all" />
+                        <ArrowRight className="size-4 opacity-70 group-hover:opacity-100 transition-all" />
                         <span className="sr-only">Open project</span>
                       </Link>
                     </div>

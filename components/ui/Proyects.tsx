@@ -81,7 +81,7 @@ export default function Proyects() {
                       href={`/projects/${project.slug}`}
                       className="p-2 border border-input rounded-md group"
                     >
-                      <ArrowUpRight className="size-4 opacity-70 group-hover:opacity-100 transition-all" />
+                      <ArrowRight className="size-4 opacity-70 group-hover:opacity-100 transition-all" />
                     </Link>
                   </div>
                 </div>
