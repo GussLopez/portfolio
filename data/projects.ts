@@ -8,11 +8,11 @@ import { BiLogoPostgresql } from "react-icons/bi";
 
 export const projects = [
   {
-    title: "Flyzzio",
-    href: "https://flyzzio.vercel.app/admin",
+    title: "Surtio",
+    href: "https://surtio.vercel.app",
     description:
       "Inventory and point-of-sale system developed to optimize product management, sales, and stock control.",
-    slug: "flyzzio",
+    slug: "surtio",
     technologies: [
       {
         icon: RiNextjsFill,
