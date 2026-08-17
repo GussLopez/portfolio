@@ -53,7 +53,7 @@ export default function Navbar() {
     return activePath.startsWith(link.path);
   });
   return (
-    <div className="fixed bottom-6 right-1/2 translate-x-1/2 rounded-[6px] text-sm border border-input bg-muted">
+    <div className="fixed bottom-6 right-1/2 translate-x-1/2 rounded-[6px] text-sm border border-input bg-muted z-99">
       <div className="block md:hidden">
         <DropdownMenu modal={false}>
           <DropdownMenuTrigger asChild>
