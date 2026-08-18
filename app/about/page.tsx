@@ -2,11 +2,10 @@
 import { motion } from "motion/react";
 
 export default function AboutPage() {
-
   return (
     <main className="container max-w-3xl mx-auto p-8">
-      <div className="absolute -top-45 right-40 w-70 h-80 blur-3xl rounded-full bg-brand"></div>
-      <div className="absolute -top-45 right-65 w-70 h-70 blur-3xl rounded-full bg-orange-400"></div>
+      <div className="absolute -top-45 right-[1%] w-40 h-50 lg:w-70 lg:h-80 blur-3xl rounded-full bg-brand"></div>
+      <div className="absolute -top-45 right-[10%] w-40 h-40 lg:w-70 lg:h-70 blur-3xl rounded-full bg-orange-400"></div>
       <div>
         <motion.h1
           className="text-6xl font-gilda"
