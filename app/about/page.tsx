@@ -2,6 +2,8 @@ export default function AboutPage() {
 
   return (
     <main className="container max-w-3xl mx-auto p-8">
+      <div className="absolute -top-45 right-40 w-70 h-80 blur-3xl rounded-full bg-brand"></div>
+      <div className="absolute -top-45 right-65 w-70 h-70 blur-3xl rounded-full bg-orange-400"></div>
       <div>
         <h1 className="text-6xl font-gilda">Gus López</h1>
         <h2 className="text-6xl font-gilda">Student & Full Stack Developer</h2>
