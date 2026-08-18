@@ -14,7 +14,7 @@ export default function Footer() {
           <span className="uppercase text-xs text-muted-foreground font-semibold">Contact:</span>
           <a
             href="mailto:gustavolopez819@gmail.com"
-            className="w-fit text-sm text-white/80 hover:text-white transition-all duration-175">gustavolopez819@gmail.com</a>
+            className="w-fit text-sm text-foreground/80 hover:text-foreground transition-all duration-175">gustavolopez819@gmail.com</a>
         </div>
 
         <div className="flex flex-col gap-3">
