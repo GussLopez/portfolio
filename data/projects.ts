@@ -118,12 +118,14 @@ export const allProjects = [
       "One tap connects your table to your restaurant’s digital experience.",
     published: new Date(2026, 8, 20),
     preview: "/img/projects/lennsi-preview.webp",
-    p1: "Lennsi is a SaaS platform designed to connect the physical restaurant experience with digital services through NFC technology. By tapping a compatible smartphone on a table’s NFC tag, guests can access a dedicated page with the restaurant’s menu, Wi-Fi details, review links, social media, and promotions.",
-    p2: "The platform brings these interactions together in a mobile-friendly interface, giving guests a convenient way to find useful information without installing an app. Each touchpoint has a unique URL associated with a branch or table, allowing restaurants to tailor the experience to different locations.",
-    p3: "For restaurant owners, Lennsi provides a centralized dashboard to manage multiple branches, organize tables, and configure digital touchpoints. Restaurant information and destination links can be updated while keeping the same NFC URL, reducing the need to replace physical materials when content changes.",
-    p4: "Engagement analytics help owners understand how guests interact with their digital content. By tracking touchpoint activity and actions such as opening the menu or visiting a review link, Lennsi provides insight into which resources guests use and how engagement varies across the restaurant.",
-    p5: "Built with Next.js, TypeScript, and Supabase, the application combines a responsive frontend with authentication, relational data storage, and restaurant-level data isolation. Tailwind CSS and shadcn/ui support a consistent interface across the management dashboard and public guest pages.",
-    p6: "The project focuses on making restaurant technology practical for everyday use, from onboarding and branch configuration to the experience of a guest tapping an NFC tag. It brings together product design, database modeling, access control, and analytics in a single application.",
+    paragraphs: [
+      "Lennsi is a SaaS platform designed to connect the physical restaurant experience with digital services through NFC technology. By tapping a compatible smartphone on a table’s NFC tag, guests can access a dedicated page with the restaurant’s menu, Wi-Fi details, review links, social media, and promotions.",
+      "The platform brings these interactions together in a mobile-friendly interface, giving guests a convenient way to find useful information without installing an app. Each touchpoint has a unique URL associated with a branch or table, allowing restaurants to tailor the experience to different locations.",
+      "For restaurant owners, Lennsi provides a centralized dashboard to manage multiple branches, organize tables, and configure digital touchpoints. Restaurant information and destination links can be updated while keeping the same NFC URL, reducing the need to replace physical materials when content changes.",
+      "Engagement analytics help owners understand how guests interact with their digital content. By tracking touchpoint activity and actions such as opening the menu or visiting a review link, Lennsi provides insight into which resources guests use and how engagement varies across the restaurant.",
+      "Built with Next.js, TypeScript, and Supabase, the application combines a responsive frontend with authentication, relational data storage, and restaurant-level data isolation. Tailwind CSS and shadcn/ui support a consistent interface across the management dashboard and public guest pages.",
+      "The project focuses on making restaurant technology practical for everyday use, from onboarding and branch configuration to the experience of a guest tapping an NFC tag. It brings together product design, database modeling, access control, and analytics in a single application.",
+    ],
     characteristics: [
       {
         characteristic: "NFC-powered guest experience",
@@ -199,8 +201,10 @@ export const allProjects = [
     quote: "Manage your business and sales effortlessly.",
     published: new Date(2026, 4, 13),
     preview: "/img/projects/surtio-preview.webp",
-    p1: "is a tool designed to manage your business inventory, generate sales, and create reports for data-driven decision-making. It is built to simplify management by providing intuitive interfaces and an efficient workflow that makes it easier to control products, customers, and sales activity in real time.",
-    p2: "The system helps optimize administrative processes, reduce manual errors, and provide key business insights through detailed reports and statistics.",
+    paragraphs: [
+      "Surtio is a tool designed to manage your business inventory, generate sales, and create reports for data-driven decision-making. It is built to simplify management by providing intuitive interfaces and an efficient workflow that makes it easier to control products, customers, and sales activity in real time.",
+      "The system helps optimize administrative processes, reduce manual errors, and provide key business insights through detailed reports and statistics.",
+    ],
     characteristics: [
       {
         characteristic: "Sales management",
@@ -256,8 +260,10 @@ export const allProjects = [
     quote:
       "Order tracking and e-commerce management in a platform connected to multiple suppliers.",
     preview: "/img/projects/hisgroup-preview.webp",
-    p1: "is an e-commerce platform focused on order management and tracking, designed to connect administrators and customers within a single system. The application allows products, categories, and purchase orders to be managed through an intuitive admin dashboard, making commercial operations easier to organize and control.",
-    p2: "The system integrates APIs from different suppliers to dynamically display products within the catalog, keeping information updated and scalable. In addition, customers can track the status of their orders in real time, improving the shopping experience and communication with the company.",
+    paragraphs: [
+      "Hisgroup Company is an e-commerce platform focused on order management and tracking, designed to connect administrators and customers within a single system. The application allows products, categories, and purchase orders to be managed through an intuitive admin dashboard, making commercial operations easier to organize and control.",
+      "The system integrates APIs from different suppliers to dynamically display products within the catalog, keeping information updated and scalable. In addition, customers can track the status of their orders in real time, improving the shopping experience and communication with the company.",
+    ],
     characteristics: [
       {
         characteristic: "Admin dashboard",
@@ -317,8 +323,10 @@ export const allProjects = [
     github: "https://github.com/GussLopez/meeti",
     published: new Date(2026, 5, 3),
     quote: "Organize meetings, build communities, and meet new people.",
-    p1: "is a web application designed to create and manage in-person and virtual meetings through a modern, intuitive, and collaboration-focused experience. The platform allows users to organize events, manage communities, and participate in meetings easily from any device.",
-    p2: "Additionally, users can join communities, manage active sessions, and keep their activity synchronized across multiple devices. The project was built with a modern architecture using Next.js, Drizzle ORM, and Better Auth to provide a fast, secure, and scalable system.",
+    paragraphs: [
+      "Meeti is a web application designed to create and manage in-person and virtual meetings through a modern, intuitive, and collaboration-focused experience. The platform allows users to organize events, manage communities, and participate in meetings easily from any device.",
+      "Additionally, users can join communities, manage active sessions, and keep their activity synchronized across multiple devices. The project was built with a modern architecture using Next.js, Drizzle ORM, and Better Auth to provide a fast, secure, and scalable system.",
+    ],
     characteristics: [
       {
         characteristic: "Meeting management",
@@ -378,8 +386,10 @@ export const allProjects = [
     preview: "/img/projects/saimo-preview.webp",
     quote:
       "Dynamic catalog, advanced search, and a modern experience for exploring products and services.",
-    p1: "is a corporate web application focused on showcasing products and services through a modern, dynamic, and intuitive experience. The platform allows users to browse a product catalog integrated from external supplier APIs, making real-time product discovery and navigation easier.",
-    p2: "In addition to the catalog, the website includes multiple informational sections about the company’s services and solutions. The landing page was designed with smooth animations using Motion to provide a more engaging, modern, and professional visual experience.",
+    paragraphs: [
+      "Grupo Saimo is a corporate web application focused on showcasing products and services through a modern, dynamic, and intuitive experience. The platform allows users to browse a product catalog integrated from external supplier APIs, making real-time product discovery and navigation easier.",
+      "In addition to the catalog, the website includes multiple informational sections about the company’s services and solutions. The landing page was designed with smooth animations using Motion to provide a more engaging, modern, and professional visual experience.",
+    ],
     characteristics: [
       {
         characteristic: "Dynamic catalog",
@@ -444,8 +454,10 @@ export const allProjects = [
     quote:
       "Explore the menu, find locations, and discover the Tacos Rigo experience from any device.",
     published: new Date(2025, 8, 27),
-    p1: "is a corporate website developed to showcase the restaurant’s identity, services, and food offerings through a modern and accessible experience. The platform allows users to explore the menu, discover available locations, and access relevant business information from any device. The website was designed with an attractive visual style aligned with the brand and a responsive approach to improve user experience and strengthen the restaurant’s digital presence.",
-    p2: "Additionally, it includes several informational sections designed to simplify navigation and promote the services offered by the brand.",
+    paragraphs: [
+      "Tacos Rigo is a corporate website developed to showcase the restaurant’s identity, services, and food offerings through a modern and accessible experience. The platform allows users to explore the menu, discover available locations, and access relevant business information from any device. The website was designed with an attractive visual style aligned with the brand and a responsive approach to improve user experience and strengthen the restaurant’s digital presence.",
+      "Additionally, it includes several informational sections designed to simplify navigation and promote the services offered by the brand.",
+    ],
     characteristics: [
       {
         characteristic: "Menu showcase",

@@ -6,7 +6,7 @@ export default function Hero() {
       <div>
         <motion.p
           initial={{ opacity: 0, y: -6, filter: "blur(4px)" }}
-          animate={{ opacity: .8, y: 0, filter: "blur(0px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: .3, ease: "easeIn" }}
           className="opacity-80 leading-8 py-4 font-light"
         >

@@ -72,14 +72,12 @@ export default async function ProjectPage({ params }: ProjectPropsPage) {
 
         <article className="grid gap-4">
           <h2 className="article-heading">Project Overview</h2>
-          <p className="article-p">
-            <strong>{project.title}</strong> {project.p1}
-          </p>
-          {project.p2 && <p className="article-p">{project.p2}</p>}
-          {project.p3 && <p className="article-p">{project.p2}</p>}
-          {project.p4 && <p className="article-p">{project.p2}</p>}
-          {project.p5 && <p className="article-p">{project.p2}</p>}
-          {project.p6 && <p className="article-p">{project.p2}</p>}
+          {project.paragraphs.map((paragraph, i) => (
+            <p key={i} className="article-p">
+              {paragraph}
+            </p>
+          ))}
+          
 
           <h2 className="article-heading">Key Features</h2>
           <div className="grid gap-6">
