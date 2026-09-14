@@ -18,21 +18,25 @@ export default function AboutPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: .3, delay: 0.2 }}
           className="text-6xl font-gilda"
-        >Student & Full Stack </motion.h2>
+        >
+          Student & Full Stack
+        </motion.h2>
         <motion.h2
           initial={{ opacity: 0, y: 3 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: .3, delay: 0.3 }}
           className="text-6xl font-gilda"
-        >Developer</motion.h2>
+        >
+          Developer
+        </motion.h2>
       </div>
-      <div className="mt-14 space-y-6 text-muted-foreground font-light">
-
+      <div className="mt-14 space-y-6 font-light">
         <motion.p
           initial={{ opacity: 0, y: -6, filter: "blur(4px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: .3, ease: 'easeIn' }}
-        >I'm a <span className="font-bold text-foreground">Full Stack Software Developer</span>, currently studying <span>Software Engineering</span> at {" "}
+        >
+          I'm a <span className="font-bold text-foreground">Full Stack Software Developer</span>, currently studying <span>Software Engineering</span> at {" "}
           <a target="_blank" href={'https://utcancun.edu.mx'} className="pb-1 border-b border-transparent font-bold hover:border-foreground/60 transition-all duration-400 hover:text-foreground">
             Universidad Tecnológica de Cancún
           </a> {" "}
@@ -55,11 +59,13 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: -6, filter: "blur(4px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: .3, ease: 'easeIn' }}
-        >I'm passionate about {" "}
+        >
+          I'm passionate about {" "}
           <span className="font-bold text-foreground">
             building software that is useful, maintainable, and enjoyable to use.
           </span>{" "}
-          My main goal is to keep growing as a developer by learning new technologies, improving my problem-solving skills, and following good development practices.</motion.p>
+          My main goal is to keep growing as a developer by learning new technologies, improving my problem-solving skills, and following good development practices.
+        </motion.p>
       </div>
     </main>
   )
