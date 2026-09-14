@@ -76,6 +76,10 @@ export default async function ProjectPage({ params }: ProjectPropsPage) {
             <strong>{project.title}</strong> {project.p1}
           </p>
           {project.p2 && <p className="article-p">{project.p2}</p>}
+          {project.p3 && <p className="article-p">{project.p2}</p>}
+          {project.p4 && <p className="article-p">{project.p2}</p>}
+          {project.p5 && <p className="article-p">{project.p2}</p>}
+          {project.p6 && <p className="article-p">{project.p2}</p>}
 
           <h2 className="article-heading">Key Features</h2>
           <div className="grid gap-6">

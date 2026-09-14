@@ -5,14 +5,15 @@ import {
 } from "react-icons/ri";
 import { SiBetterauth, SiDrizzle, SiExpress, SiShadcnui } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
 export const projects = [
   {
-    title: "Surtio",
-    href: "https://surtio.vercel.app",
+    title: "Lennsi",
+    href: "https://lennsi.com",
     description:
-      "Inventory and point-of-sale system developed to optimize product management, sales, and stock control.",
-    slug: "surtio",
+      "NFC SaaS platform for restaurants with multi-branch management and analytics",
+    slug: "lennsi",
     technologies: [
       {
         icon: RiNextjsFill,
@@ -33,6 +34,11 @@ export const projects = [
         icon: SiShadcnui,
         className: "",
         name: "Shadcn UI",
+      },
+      {
+        icon: TbBrandFramerMotion,
+        className: "text-yellow-500 dark:text-yellow-300",
+        name: "Motion",
       },
     ],
   },
@@ -71,11 +77,11 @@ export const projects = [
     ],
   },
   {
-    title: "Meeti",
-    href: "#",
+    title: "Surtio",
+    href: "https://surtio.vercel.app",
     description:
-      "Web app for creating and managing in-person and virtual meetings with a modern and intuitive experience.",
-    slug: "meeti",
+      "Inventory and point-of-sale system developed to optimize product management, sales, and stock control.",
+    slug: "surtio",
     technologies: [
       {
         icon: RiNextjsFill,
@@ -83,25 +89,107 @@ export const projects = [
         name: "Next.js",
       },
       {
-        icon: SiDrizzle,
-        className: "text-lime-600 dark:text-[#C5F74F]",
-        name: "Drizzle ORM",
-      },
-      {
-        icon: SiBetterauth,
-        className: "",
-        name: "Better Auth",
+        icon: RiSupabaseFill,
+        className: "text-[#3FCF8E]",
+        name: "Supabase",
       },
       {
         icon: RiTailwindCssFill,
         className: "text-[#06B6D4]",
         name: "Tailwind CSS",
       },
+      {
+        icon: SiShadcnui,
+        className: "",
+        name: "Shadcn UI",
+      },
     ],
   },
 ];
 
 export const allProjects = [
+  {
+    title: "Lennsi",
+    href: "https://lennsi.com",
+    description:
+      "A SaaS platform that connects restaurant guests to digital menus, Wi-Fi, reviews, and social media through NFC touchpoints, with multi-branch management and engagement analytics.",
+    slug: "lennsi",
+    quote:
+      "One tap connects your table to your restaurant’s digital experience.",
+    published: new Date(2026, 8, 20),
+    preview: "/img/projects/lennsi-preview.webp",
+    p1: "Lennsi is a SaaS platform designed to connect the physical restaurant experience with digital services through NFC technology. By tapping a compatible smartphone on a table’s NFC tag, guests can access a dedicated page with the restaurant’s menu, Wi-Fi details, review links, social media, and promotions.",
+    p2: "The platform brings these interactions together in a mobile-friendly interface, giving guests a convenient way to find useful information without installing an app. Each touchpoint has a unique URL associated with a branch or table, allowing restaurants to tailor the experience to different locations.",
+    p3: "For restaurant owners, Lennsi provides a centralized dashboard to manage multiple branches, organize tables, and configure digital touchpoints. Restaurant information and destination links can be updated while keeping the same NFC URL, reducing the need to replace physical materials when content changes.",
+    p4: "Engagement analytics help owners understand how guests interact with their digital content. By tracking touchpoint activity and actions such as opening the menu or visiting a review link, Lennsi provides insight into which resources guests use and how engagement varies across the restaurant.",
+    p5: "Built with Next.js, TypeScript, and Supabase, the application combines a responsive frontend with authentication, relational data storage, and restaurant-level data isolation. Tailwind CSS and shadcn/ui support a consistent interface across the management dashboard and public guest pages.",
+    p6: "The project focuses on making restaurant technology practical for everyday use, from onboarding and branch configuration to the experience of a guest tapping an NFC tag. It brings together product design, database modeling, access control, and analytics in a single application.",
+    characteristics: [
+      {
+        characteristic: "NFC-powered guest experience",
+        desc: "Give guests access to restaurant content by tapping a compatible smartphone on an NFC tag, with no app installation required.",
+      },
+      {
+        characteristic: "Multi-branch management",
+        desc: "Manage multiple locations within one restaurant account, with branch-specific tables, content, and touchpoints.",
+      },
+      {
+        characteristic: "Table-specific touchpoints",
+        desc: "Associate unique public URLs with individual tables or branches to organize and track guest interactions.",
+      },
+      {
+        characteristic: "Digital menus",
+        desc: "Make restaurant menus accessible from a mobile-friendly page and update them without replacing NFC tags.",
+      },
+      {
+        characteristic: "Customizable guest actions",
+        desc: "Bring together menu access, Wi-Fi details, Google review links, social media, WhatsApp, and promotions.",
+      },
+      {
+        characteristic: "Engagement analytics",
+        desc: "Track touchpoint activity and guest actions to understand which digital resources receive the most engagement.",
+      },
+      {
+        characteristic: "Centralized content management",
+        desc: "Update restaurant information and touchpoint destinations from a single dashboard.",
+      },
+      {
+        characteristic: "Authentication and data isolation",
+        desc: "Use Supabase authentication and row-level security policies to restrict access to each restaurant’s management data.",
+      },
+      {
+        characteristic: "Responsive interface",
+        desc: "Provide a mobile-first guest experience and a management dashboard that adapts to different screen sizes.",
+      },
+    ],
+    technologies: [
+      {
+        icon: RiNextjsFill,
+        className: "",
+        name: "Next.js",
+      },
+      {
+        icon: RiSupabaseFill,
+        className: "text-[#3FCF8E]",
+        name: "Supabase",
+      },
+      {
+        icon: RiTailwindCssFill,
+        className: "text-[#06B6D4]",
+        name: "Tailwind CSS",
+      },
+      {
+        icon: SiShadcnui,
+        className: "",
+        name: "shadcn/ui",
+      },
+      {
+        icon: TbBrandFramerMotion,
+        className: "text-yellow-500 dark:text-yellow-300",
+        name: "Motion",
+      },
+    ],
+  },
   {
     title: "Surtio",
     href: "https://surtio.vercel.app",
