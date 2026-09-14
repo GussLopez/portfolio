@@ -73,11 +73,14 @@ export default async function ProjectPage({ params }: ProjectPropsPage) {
         <article className="grid gap-4">
           <h2 className="article-heading">Project Overview</h2>
           {project.paragraphs.map((paragraph, i) => (
-            <p key={i} className="article-p">
+            <p
+              key={i}
+              className="leading-7.5 text-mauve-700 dark:text-neutral-200 mb-4"
+            >
               {paragraph}
             </p>
           ))}
-          
+
 
           <h2 className="article-heading">Key Features</h2>
           <div className="grid gap-6">

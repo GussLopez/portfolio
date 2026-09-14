@@ -136,7 +136,3 @@
 .article-heading {
   @apply text-2xl font-semibold mt-8 mb-3
 }
-
-.article-p {
-  @apply leading-7.5 text-mauve-700 dark:text-neutral-200 mb-4
-}
