@@ -97,13 +97,13 @@ export default function Navbar() {
               <DropdownMenuItem className="p-0">
                 <span className="flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium rounded-[6px] hover:text-white!">
                   Github
-                  <FaGithub className="size-4.5 text-black/80 group-focus/dropdown-menu-item:fill-white" />
+                  <FaGithub className="size-4.5 text-black/80 dark:text-white group-focus/dropdown-menu-item:fill-white" />
                 </span>
               </DropdownMenuItem>
               <DropdownMenuItem className="p-0">
                 <span className="flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium rounded-[6px] hover:text-white!">
                   LinkedIn
-                  <FaLinkedin className="size-4.5 text-black/80 group-focus/dropdown-menu-item:fill-white" />
+                  <FaLinkedin className="size-4.5 text-black/80 dark:text-white group-focus/dropdown-menu-item:fill-white" />
                 </span>
               </DropdownMenuItem>
               <DropdownMenuItem
@@ -113,9 +113,9 @@ export default function Navbar() {
                 <span className="flex w-full items-center justify-between px-3 py-2 text-[15px] font-medium rounded-[6px] hover:text-white!">
                   Theme
                   {theme === 'dark' ? (
-                    <Sun className="size-4.5 text-black/80 group-focus/dropdown-menu-item:stroke-white" />
+                    <Sun className="size-4.5 text-black/80 dark:text-white group-focus/dropdown-menu-item:stroke-white" />
                   ) : (
-                    <Moon className="size-4.5 text-black/80 group-focus/dropdown-menu-item:stroke-white" />
+                    <Moon className="size-4.5 text-black/80 dark:text-white group-focus/dropdown-menu-item:stroke-white" />
                   )}
                 </span>
               </DropdownMenuItem>
@@ -150,7 +150,7 @@ export default function Navbar() {
           className="p-2 cursor-pointer text-muted-foreground rounded-[6px] duration-150 hover:text-foreground"
         >
           <FaGithub className="size-4" />
-          <span className="sr-only">Change theme</span>
+          <span className="sr-only">Open Github</span>
         </a>
         <button
           className="p-2 cursor-pointer text-muted-foreground rounded-[6px] duration-300 hover:text-foreground hover:rotate-25"
