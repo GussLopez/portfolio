@@ -7,7 +7,7 @@ export const images = [
       "Language I use to write safer, scalable, and easier-to-maintain code.",
   },
   {
-    domain: "next.org",
+    domain: "nextjs.org",
     link: "https://nextjs.org",
     name: "Next.js",
     description:
@@ -63,7 +63,6 @@ export const images = [
   {
     domain: "postgresql.org",
     link: "https://postgresql.org",
-    variant: "/img/stack/postgresql.png",
     name: "PostgreSQL",
     description:
       "Relational database I use for its stability, performance, and scalability.",

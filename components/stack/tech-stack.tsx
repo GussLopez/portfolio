@@ -96,7 +96,7 @@ export default function TechStack() {
               target="_blank"
             >
               <ExternalLink />
-              Ver web
+              View web
             </a>
           </Button>
         }
