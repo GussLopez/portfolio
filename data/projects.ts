@@ -43,6 +43,35 @@ export const projects = [
     ],
   },
   {
+    title: "His Signature",
+    href: "https://his-signature.com",
+    description:
+      "Elegant business website for showcasing textile catalogs and hospitality products.",
+    slug: "his-signature",
+    technologies: [
+      {
+        icon: RiNextjsFill,
+        className: "",
+        name: "Next.js",
+      },
+      {
+        icon: RiSupabaseFill,
+        className: "text-[#3FCF8E]",
+        name: "Supabase",
+      },
+      {
+        icon: RiTailwindCssFill,
+        className: "text-[#06B6D4]",
+        name: "Tailwind CSS",
+      },
+      {
+        icon: SiShadcnui,
+        className: "",
+        name: "Shadcn UI",
+      }
+    ],
+  },
+  {
     title: "Hisgroup Company",
     href: "https://hisgroupcompany.com",
     description:
@@ -315,6 +344,63 @@ export const allProjects = [
     ],
   },
   {
+  title: "His Signature",
+  href: "https://his-signature.com",
+  description:
+    "Modern e-commerce catalog experience for premium hospitality textiles, furniture, and hotel essentials.",
+  slug: "his-signature",
+  published: new Date(2026, 10, 24),
+  preview: "/img/projects/signature-preview.webp",
+  quote: "The signature for your hospitality.",
+  technologies: [
+    {
+      icon: RiNextjsFill,
+      className: "",
+      name: "Next.js",
+    },
+    {
+      icon: RiTailwindCssFill,
+      className: "text-[#06B6D4]",
+      name: "Tailwind CSS",
+    },
+    {
+      icon: SiShadcnui,
+      className: "",
+      name: "Shadcn UI",
+    },
+  ],
+  paragraphs: [
+    "His Signature is a digital platform designed for the hospitality industry, showcasing a curated selection of premium hotel textiles, furniture, and essential products. The website combines a sophisticated visual identity with a clean and intuitive browsing experience.",
+    "Built with modern web technologies, the platform focuses on product discovery, catalog organization, responsive design, and a scalable foundation to support the brand's digital presence and commercial growth.",
+  ],
+  characteristics: [
+    {
+      characteristic: "Premium product catalog",
+      desc: "Organized product collections for hotel textiles, furniture, and hospitality essentials.",
+    },
+    {
+      characteristic: "Modern brand identity",
+      desc: "Minimalist layouts, refined typography, and a visual style aligned with the premium hospitality market.",
+    },
+    {
+      characteristic: "Intuitive navigation",
+      desc: "A structured browsing experience that makes it easy for customers to explore product categories and collections.",
+    },
+    {
+      characteristic: "Scalable architecture",
+      desc: "Built with Next.js to support future improvements, new product categories, and evolving business requirements.",
+    },
+    {
+      characteristic: "Optimized performance",
+      desc: "Efficient rendering and optimized assets for a smooth and fast browsing experience.",
+    },
+    {
+      characteristic: "Responsive experience",
+      desc: "Interface optimized for desktop and mobile devices.",
+    },
+  ],
+},
+  /* {
     title: "Meeti",
     href: "#",
     description:
@@ -375,7 +461,7 @@ export const allProjects = [
         name: "Tailwind CSS",
       },
     ],
-  },
+  }, */
   {
     title: "Grupo Saimo",
     href: "https://gruposaimo.com",
